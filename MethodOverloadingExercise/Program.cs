@@ -24,17 +24,17 @@ namespace MethodOverloadingExercise
         {
             var sum = x + y;
 
-            if (z == true && sum > 1)
+            if (z && sum > 1)
             {
                 return $"{sum} dollars";
             }
-            else if (z == true && sum == 1)
+            else if (z && sum == 1)
             {
                 return $"{sum} dollar";
             }
-            else if (z == true && sum < 1)
+            else if (z && sum == -1)
             {
-                return $"{sum} dollars";
+                return $"{sum} dollar";
             }
             else
             {
